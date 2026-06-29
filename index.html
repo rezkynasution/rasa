@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RASA Studio is a premium photography studio for prewedding, maternity, graduation, formal portrait, ID photos, and professional profile sessions." />
+  <meta name="keywords" content="RASA Studio, photography studio, prewedding photography, maternity photography, graduation photography, formal portrait, professional headshot" />
+  <meta name="theme-color" content="#050505" />
+  <title>RASA Studio | Premium Photography Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#050505",
+            smoke: "#f5f5f2",
+            mist: "#d8d8d2",
+            champagne: "#d7c7ad"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            display: ["Playfair Display", "serif"]
+          },
+          boxShadow: {
+            glow: "0 28px 90px rgba(0,0,0,.16)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-smoke text-ink antialiased">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="fixed inset-x-0 top-0 z-50 px-4 py-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+    <nav class="nav-shell mx-auto flex max-w-7xl items-center justify-between rounded-full px-4 py-3 sm:px-6">
+      <a href="#home" class="flex items-center gap-3" aria-label="RASA Studio home">
+        <img src="assets/logo-rasa.png" alt="RASA Studio logo" class="h-9 w-auto rounded-full object-contain" />
+        <span class="hidden text-xs font-semibold uppercase tracking-[0.36em] text-white/90 sm:block">RASA Studio</span>
+      </a>
+
+      <button class="menu-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white lg:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.28em] text-white/75 lg:flex">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#gallery" class="nav-link">Works</a>
+        <a href="#why" class="nav-link">Why Us</a>
+      </div>
+
+      <a href="https://wa.me/6285117605728?text=Hello%20RASA%20Studio,%20I%20want%20to%20book%20a%20photo%20session." target="_blank" rel="noopener" class="hidden rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.22em] text-ink transition hover:-translate-y-0.5 hover:bg-champagne lg:inline-flex">
+        Book Now
+      </a>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-panel mx-auto mt-3 hidden max-w-7xl rounded-[2rem] p-5 lg:hidden">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Our Works</a>
+      <a href="#why">Why Choose Us</a>
+      <a href="https://wa.me/6285117605728?text=Hello%20RASA%20Studio,%20I%20want%20to%20book%20a%20photo%20session." target="_blank" rel="noopener">Book a Session</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero relative min-h-screen overflow-hidden bg-ink text-white" aria-label="RASA Studio hero">
+      <div class="swiper hero-swiper absolute inset-0">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/hero-birthday.png" alt="Birthday studio session with family" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/hero-formal.png" alt="Formal portrait session with cinematic shadow" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/prewedding-red.png" alt="Elegant prewedding studio portrait" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/beauty-closeup.png" alt="Close-up editorial portrait" />
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_35%,rgba(255,255,255,.18),transparent_28%),linear-gradient(90deg,rgba(0,0,0,.76),rgba(0,0,0,.42)_45%,rgba(0,0,0,.2))]"></div>
+      <div class="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-ink to-transparent"></div>
+
+      <div class="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 py-32 sm:px-8 lg:px-10">
+        <div class="max-w-4xl">
+          <p class="eyebrow reveal">Premium Photography Studio</p>
+          <h1 class="hero-title reveal mt-6 font-display text-5xl font-semibold leading-[0.92] tracking-[-0.06em] sm:text-7xl lg:text-8xl">
+            Every Moment Deserves to Be Remembered
+          </h1>
+          <p class="reveal mt-7 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
+            RASA Studio creates cinematic, heartfelt photography experiences with professional direction, refined lighting, and premium editing for every meaningful chapter.
+          </p>
+          <div class="reveal mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="https://wa.me/6285117605728?text=Hello%20RASA%20Studio,%20I%20want%20to%20book%20a%20photo%20session." target="_blank" rel="noopener" class="glass-button primary">
+              <span>Book Now</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#gallery" class="glass-button secondary">
+              <span>Our Works</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad relative overflow-hidden">
+      <div class="soft-orb left-[-8rem] top-24"></div>
+      <div class="mx-auto grid max-w-7xl gap-12 px-6 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:px-10">
+        <div class="about-image reveal">
+          <img src="assets/couple-white.png" alt="RASA Studio couple photography session" loading="lazy" />
+          <div class="floating-note">
+            <span>Emotion-led direction</span>
+            <strong>Premium editing included</strong>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow text-ink/50 reveal">About RASA Studio</p>
+          <h2 class="section-title reveal mt-5">Photography that feels intimate, refined, and timeless.</h2>
+          <p class="reveal mt-6 text-lg leading-9 text-ink/68">
+            RASA Studio is a professional photography studio for people who want more than a picture. We craft calm, confident sessions for prewedding, maternity, graduation, formal portraits, ID and certificate photos, and professional profile imagery.
+          </p>
+          <p class="reveal mt-5 leading-8 text-ink/58">
+            Every session is guided by professional photographers inside a comfortable studio with modern equipment, professional lighting, premium editing, high-resolution delivery, friendly service, and a fast turnaround that keeps your milestone moving beautifully.
+          </p>
+
+          <div class="reveal mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <article class="stat-card">
+              <strong>1000+</strong>
+              <span>Happy Clients</span>
+            </article>
+            <article class="stat-card">
+              <strong>5+</strong>
+              <span>Years Experience</span>
+            </article>
+            <article class="stat-card">
+              <strong>15+</strong>
+              <span>Creative Concepts</span>
+            </article>
+            <article class="stat-card">
+              <strong>99%</strong>
+              <span>Customer Satisfaction</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-pad bg-white">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+        <div class="max-w-3xl">
+          <p class="eyebrow text-ink/50 reveal">Our Services</p>
+          <h2 class="section-title reveal mt-5">Curated photography sessions for every meaningful milestone.</h2>
+        </div>
+
+        <div class="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <article class="service-card reveal">
+            <span class="service-icon">01</span>
+            <h3>Prewedding</h3>
+            <p>Elegant visual storytelling with cinematic composition, posing direction, and refined couple-focused concepts.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">02</span>
+            <h3>Maternity</h3>
+            <p>Soft, emotional portraits designed to celebrate motherhood with comfort, calm, and beautiful lighting.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">03</span>
+            <h3>Graduation</h3>
+            <p>Polished graduation imagery for individuals, families, and academic milestones with premium retouching.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">04</span>
+            <h3>Formal Portrait</h3>
+            <p>Timeless studio portraits for formal needs, ceremonial looks, and elevated personal documentation.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">05</span>
+            <h3>Professional Headshot</h3>
+            <p>Confident profile photos for business, personal branding, LinkedIn, portfolios, and modern digital presence.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">06</span>
+            <h3>ID & Certificate Photo</h3>
+            <p>Fast, clean, regulation-ready photos with professional lighting and accurate finishing for official use.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-pad relative overflow-hidden bg-ink text-white">
+      <div class="absolute inset-0 opacity-30">
+        <div class="grain"></div>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+        <div class="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+          <div class="max-w-3xl">
+            <p class="eyebrow text-white/48 reveal">Selected Works</p>
+            <h2 class="section-title reveal mt-5 text-white">A cinematic gallery shaped by emotion, shadow, and quiet luxury.</h2>
+          </div>
+          <div class="filter-bar reveal" role="list" aria-label="Gallery filters">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="prewedding">Prewedding</button>
+            <button class="filter-btn" type="button" data-filter="graduation">Graduation</button>
+            <button class="filter-btn" type="button" data-filter="formal">Formal</button>
+            <button class="filter-btn" type="button" data-filter="maternity">Maternity</button>
+            <button class="filter-btn" type="button" data-filter="professional">Professional</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid mt-14" aria-live="polite">
+          <a href="assets/prewedding-couple.png" class="gallery-card glightbox reveal tall" data-gallery="rasa-gallery" data-category="prewedding" data-title="Prewedding / Studio Calm">
+            <img src="assets/prewedding-couple.png" alt="Prewedding couple seated in studio" loading="lazy" />
+            <span>Prewedding</span>
+          </a>
+          <a href="assets/graduation.png" class="gallery-card glightbox reveal" data-gallery="rasa-gallery" data-category="graduation" data-title="Graduation / Achievement Portrait">
+            <img src="assets/graduation.png" alt="Graduation portrait with robe and sash" loading="lazy" />
+            <span>Graduation</span>
+          </a>
+          <a href="assets/formal-traditional.png" class="gallery-card glightbox reveal tall" data-gallery="rasa-gallery" data-category="formal" data-title="Formal / Heritage Portrait">
+            <img src="assets/formal-traditional.png" alt="Formal traditional portrait in studio" loading="lazy" />
+            <span>Formal</span>
+          </a>
+          <a href="assets/family-maternity.png" class="gallery-card glightbox reveal" data-gallery="rasa-gallery" data-category="maternity" data-title="Maternity / Family Chapter">
+            <img src="assets/family-maternity.png" alt="Family maternity studio portrait" loading="lazy" />
+            <span>Maternity</span>
+          </a>
+          <a href="assets/headshot-watch.png" class="gallery-card glightbox reveal" data-gallery="rasa-gallery" data-category="professional" data-title="Professional / Contrast Headshot">
+            <img src="assets/headshot-watch.png" alt="Professional profile portrait with dramatic light" loading="lazy" />
+            <span>Professional</span>
+          </a>
+          <a href="assets/prewedding-red.png" class="gallery-card glightbox reveal wide" data-gallery="rasa-gallery" data-category="prewedding" data-title="Prewedding / Red Editorial">
+            <img src="assets/prewedding-red.png" alt="Prewedding couple with red floral styling" loading="lazy" />
+            <span>Prewedding</span>
+          </a>
+          <a href="assets/beauty-closeup.png" class="gallery-card glightbox reveal tall" data-gallery="rasa-gallery" data-category="formal" data-title="Formal / Editorial Close-Up">
+            <img src="assets/beauty-closeup.png" alt="Elegant editorial close-up portrait" loading="lazy" />
+            <span>Formal</span>
+          </a>
+          <a href="assets/cultural-portrait.png" class="gallery-card glightbox reveal" data-gallery="rasa-gallery" data-category="formal" data-title="Formal / Cultural Beauty">
+            <img src="assets/cultural-portrait.png" alt="Cultural portrait with golden traditional headpiece" loading="lazy" />
+            <span>Formal</span>
+          </a>
+          <a href="assets/headshot-contrast.png" class="gallery-card glightbox reveal" data-gallery="rasa-gallery" data-category="professional" data-title="Professional / Graphic Contrast">
+            <img src="assets/headshot-contrast.png" alt="Professional portrait with graphic contrast background" loading="lazy" />
+            <span>Professional</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section-pad bg-smoke">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="eyebrow text-ink/50 reveal">Why Choose Us</p>
+          <h2 class="section-title reveal mt-5">A studio experience designed to feel effortless from booking to delivery.</h2>
+        </div>
+
+        <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="why-card reveal">
+            <h3>Professional Team</h3>
+            <p>Experienced photographers guide every pose, angle, and mood with calm creative direction.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Premium Equipment</h3>
+            <p>Modern cameras, lenses, and studio lighting help every session look polished and refined.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Comfortable Studio</h3>
+            <p>A relaxed, welcoming environment keeps clients confident and natural in front of camera.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Creative Concepts</h3>
+            <p>Minimal, cinematic, formal, and emotional concepts are shaped around your story and purpose.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>High Quality Editing</h3>
+            <p>Premium retouching enhances the image while keeping skin, emotion, and identity beautifully real.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Affordable Packages</h3>
+            <p>Thoughtful packages make premium photography accessible without compromising the experience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad relative overflow-hidden bg-white">
+      <div class="cta-panel reveal mx-auto max-w-7xl px-6 py-20 text-center sm:px-10 lg:py-28">
+        <img src="assets/mark-flower.png" alt="" class="mx-auto mb-8 h-14 w-14 object-contain opacity-80" loading="lazy" />
+        <p class="eyebrow text-white/54">Book Your Session</p>
+        <h2 class="mx-auto mt-5 max-w-4xl font-display text-5xl font-semibold leading-none tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
+          Let's Capture Your Best Moment.
+        </h2>
+        <p class="mx-auto mt-7 max-w-2xl text-base leading-8 text-white/66 sm:text-lg">
+          Whether it is love, family, achievement, or a professional new chapter, RASA Studio is ready to create photographs that feel deeply yours.
+        </p>
+        <a href="https://wa.me/6285117605728?text=Hello%20RASA%20Studio,%20I%20want%20to%20book%20a%20photo%20session." target="_blank" rel="noopener" class="glass-button primary mx-auto mt-10 w-fit">
+          <span>Book Your Session</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink px-6 py-12 text-white sm:px-8 lg:px-10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+      <div class="max-w-xl">
+        <img src="assets/logo-rasa.png" alt="RASA Studio logo" class="h-12 w-auto rounded-full object-contain" loading="lazy" />
+        <p class="mt-6 max-w-md leading-8 text-white/56">
+          RASA Studio captures emotions and meaning in every frame through refined lighting, thoughtful direction, and premium editing.
+        </p>
+      </div>
+      <div class="grid gap-4 text-sm text-white/62 sm:grid-cols-2 lg:text-right">
+        <a href="https://maps.app.goo.gl/45VkitpoNp9RwjaCA" target="_blank" rel="noopener" class="footer-link">Open Studio Address</a>
+        <a href="https://www.instagram.com/ra.sa___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="footer-link" aria-label="RASA Studio Instagram">Instagram: RASA Studio</a>
+        <p class="sm:col-span-2">© 2026 RASA Studio. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
